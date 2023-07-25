@@ -1,0 +1,377 @@
+:root{
+--neon:#F90716;
+--dark: rgb(51,51,51);
+}
+
+body{
+    background-color: rgb(30, 27, 28); 
+    font-family: "Vujahday Script";
+}
+
+#logo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.neon{
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 
+    0 0 2px #fff,
+    0 0 10px var(--neon),
+    0 0 20px var(--neon);
+    /* 0 0 80px var(--neon); */
+}
+.neon.logo{
+    font-family: 'The Nautigal';
+    font-weight: 900;
+    font-size: 100px ;
+    text-shadow: 
+    0 0 5px #fff,
+    0 0 10px var(--neon),
+    0 0 20px var(--neon),
+    0 0 40px var(--neon),
+    0 0 80px var(--neon),
+    0 0 90px var(--neon),
+    0 0 100px var(--neon),
+    0 0 150px var(--neon);
+}
+.intro{
+    font-family: 'The Nautigal';
+    font-size: 3em;
+    padding: 0 0 0.5em 0;
+    margin: 0;
+}
+.buttonList{
+    position: fixed;
+    top: 2em;
+    left : 2em;
+    display: flex;
+    gap: 16px;
+}
+.switch{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#switch, #cartButton{
+    font-size: 4em;
+    padding: 0;
+    /* font-family: ""; */
+}
+
+.lightSwitch, .cartButton{
+    padding : 0 0 0px 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#cartNum{
+    font-size: 1.8em;
+}
+.clickText{
+    font-size: 20px;
+    padding-left: 14px;
+    animation: upanddown 2s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 3.2em;
+}
+.fas.fa-level-down-alt{
+    transform:rotate(180deg);
+
+}
+
+#bottle{
+    transform: rotate(-70deg);
+    /* color: var(--neon); */
+    font-size: 70px;
+    margin : 0 20px
+}
+#cocktail{
+    transform: rotate(10deg);
+    /* color: var(--neon); */
+    font-size: 70px;
+    margin : 0 20px
+}
+#bottle {
+    animation: flicker1 5s linear ;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+    
+  
+}
+.neon .delay1{
+    position: relative;
+    z-index: 1;
+}
+.neon .delay2 {
+    animation: flicker2 6s linear ;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+.neon .delay3  {
+    animation: flicker3 8s linear ;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+.neon .delay4{
+    animation: flicker4 5s linear ;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+
+
+@keyframes upanddown{
+    50% {transform: translateY(16px);}
+    100% {transform: translateY(0);}
+}
+@keyframes flicker1{
+    0% {opacity : 0;}
+    1% {opacity: 1;}
+    2% {opacity : 0;}
+    4% {opacity: 1;}
+    55% {opacity: 1;}
+    56% {opacity: 0;}
+    57% {opacity: 1;}
+    58% {opacity: 0;}
+    59% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes flicker2{
+    0% {opacity : 0;}
+    0.5% {opacity: 1;}
+    1% {opacity : 0;}
+    
+    2% {opacity : 0;}
+    2.5% {opacity: 1;}
+    3% {opacity : 0;}
+   
+    4% {opacity : 0;}
+    4.5% {opacity: 1;}
+    5% {opacity : 0;}
+    5.5% {opacity: 1;}
+    6% {opacity : 0;}
+    6.5% {opacity: 1;}
+    15% {opacity : 1;}
+    20% {opacity : 0;}
+    31% {opacity: 1;}
+    32% {opacity: 0;}
+    33% {opacity: 1;}
+    34% {opacity: 0;}
+    60% {opacity: 1;}
+
+    
+    100% {opacity: 1;}
+}
+@keyframes flicker3{
+    0% {opacity : 0;}
+    1% {opacity: 1;}
+    2% {opacity : 0;}
+    4% {opacity: 1;}
+    5% {opacity: 0;}
+    54% {opacity: 0;}
+    55% {opacity: 1;}
+    56% {opacity: 0;}
+    57% {opacity: 1;}
+    58% {opacity: 0;}
+    59% {opacity: 1;}
+    60% {opacity: 0;}
+
+    65% {opacity: 1;}
+    99% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes flicker4{
+    10% {opacity : 0;}
+    30% {opacity: 1;}
+    50% {opacity : 0;}
+    70% {opacity: 1;}
+    72% {opacity: 1;}
+    75% {opacity: 0;}
+    78% {opacity: 1;}
+    80% {opacity: 0;}
+    85% {opacity: 0;}
+    90% {opacity: 1;}
+    100% {opacity: 1;}
+    
+}
+
+.body{
+    width: 60%;
+    margin: 50px auto 0 auto;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    flex-wrap: wrap;
+    
+}
+.body img{
+    width: 100%;
+    transition:ease  0.5s;
+    /* background-color: rgb(43, 43, 43); */
+    filter: drop-shadow(0px 0px 15px var(--neon));
+
+}
+
+.body img:hover{
+    filter: drop-shadow(0px 0px 15px #fff);  
+    cursor : pointer;
+}
+.body img:active{
+    transition: 0s;
+    transform: scale(0.9);
+}
+.body div{
+    width: 25%;
+}
+.blank{
+    visibility: hidden;
+    display: none;
+}
+
+
+/* THIS IS A TEST */
+.container{
+    width: 80%;
+    margin: 0px auto 0 auto;
+
+}
+.section-header {
+    font-family: "Vujahday Script";
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+}
+.fad.fa-shopping-cart{
+font-size: 0.8em;
+padding-right: 0.2em;
+}
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #fff;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    /* border-bottom: 1px solid #fff; */
+    margin: 10px 0em 10px 4em;
+    padding-bottom: 10px;
+
+}
+.cart-row {
+    /* margin-top: 100px; */
+    display: flex;
+   
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #fff;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 15px var(--neon));
+}
+
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color:var(--dark);
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    /* border-bottom: 1px dashed var(--neon); */
+    padding-bottom: 2em;
+    
+}
+.cart-row:first-child{
+    margin-top: 20px;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    box-shadow: 0 0 10px #fff;
+    background-color: white;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 2em;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #fff;
+    font-size: 2em;
+}
+
+.btn{
+    background-color: transparent;
+    border: none;
+    padding : 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+    /* border: 1px solid var(--neon); */
+    border-radius: 7px;
+    box-shadow: 0 0 10px var(--neon);
+}
+.btn:hover{
+    cursor: pointer;
+    border-color: #fff;
+    box-shadow: 0 0 10px #fff;
+    text-shadow: 
+    0 0 5px #fff,
+    0 0 80px #fff;
+}
+.btn-purchase {
+    display: block;
+    margin: 40px auto 40px auto;
+    font-size: 1.5em;
+    padding: 10px 20px 10px 20px;
+}

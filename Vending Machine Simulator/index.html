@@ -1,0 +1,156 @@
+<!doctype html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vending Machine Project</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css" type="text/css">
+  <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" /> -->
+
+<style>
+
+</style>
+<script src="https://kit.fontawesome.com/2f388422d2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <audio id="clickSound">
+    <source src="zapsplat_multimedia_button_click_004_68776.mp3" type="audio/mpeg">
+  </audio>
+    
+  <div class="buttonList">
+    
+    <div class="switch">
+      <button class="lightSwitch"><i id="switch" class="fad fa-light-switch-on neon"></i></button>
+      <span class="clickText neon"><i class="fas fa-level-down-alt neon"></i>Click Me</span>
+    </div>
+    <button class="cartButton neon"><i id="cartButton" class="fad fa-shopping-cart neon"></i> <span id="cartNum">0</span></button>
+  </div>
+ 
+  <div id="logo">
+        <h1 class="neon logo">
+    
+            <i id="bottle" class="fal fa-wine-bottle"></i>G<span class="delay1">i</span><span class="delay2">l</span>ang<span class="delay3">'</span><span class="delay4">s</span><i id="cocktail" class="fal fa-cocktail"></i>
+        </h1>
+        <span class="intro neon">What Would You Like To Purchase?</span>
+    </div>
+
+    
+    <div class="body">
+      <div class="shop-item">
+        <img class="items" src="Image/CocaCola.png">
+        <span class="price blank">1.99</span>
+        <span class="title blank">Coca Cola</span>
+      </div>
+      <div class="shop-item">        
+        <img class="items" src="Image/CocaColaLight.png">
+        <span class="price blank">1.29</span>
+        <span class="title blank">Coca Cola Light</span>
+      </div>
+      <div class="shop-item">        
+        <img class="items" src="Image/CocaColaZero.png">
+        <span class="price blank">1.49</span>
+        <span class="title blank">Coca Cola Zero</span>
+      </div>
+      <div class="shop-item">        
+        <img class="items" src="Image/Dr.Pepper.png">
+        <span class="price blank">2.79</span>
+        <span class="title blank">Dr. Pepper</span>
+      </div>
+      <div class="shop-item">        
+        <img class="items" src="Image/Fanta.png">
+        <span class="price blank">2.50</span>
+        <span class="title blank">Fanta Orange</span>
+      </div>
+      <div class="shop-item">        
+        <img class="items" src="Image/FantaGrape.png">
+        <span class="price blank">3.00</span>
+        <span class="title blank">Fanta Grape</span>
+      </div>
+      <div class="shop-item">        
+        <img class="items" src="Image/MonsterEnergy.png">
+        <span class="price blank">1.89</span>
+        <span class="title blank">Monster Energy</span>
+      </div>
+      <div class="shop-item">        
+        <img class="items" src="Image/MountainDew.png">
+        <span class="price blank">1.69</span>
+        <span class="title blank">Mountain Dew</span>
+      </div>
+      <div class="shop-item">        
+        <img class="items" src="Image/Pepsi.png">
+        <span class="price blank">1.19</span>
+        <span class="title blank">Pepsi</span>
+      </div>
+      <div class="shop-item">        
+        <img class="items" src="Image/RedBull.png">
+        <span class="price blank">2.59</span>
+        <span class="title blank">Red Bull</span>
+      </div>
+      <div class="shop-item">        
+        <img class="items" src="Image/RedBullZero.png">
+        <span class="price blank">2.59</span>
+        <span class="title blank">Red Bull Zero</span>
+      </div>
+      <div class="shop-item">        
+        <img class="items" src="Image/Sprite.png">
+        <span class="price blank">1.29</span>
+        <span class="title blank">Sprite</span>
+      </div>
+
+
+    </div>
+
+
+
+
+
+    <section class="container blank">
+      <h2 class="section-header neon"><i class="fad fa-shopping-cart"></i>CART</h2>
+      <div class="cart-row">
+          <span class="cart-item cart-header cart-column neon">ITEM</span>
+          <span class="cart-price cart-header cart-column neon">PRICE</span>
+          <span class="cart-quantity cart-header cart-column neon">QUANTITY</span>
+      </div>
+
+    <div class="cart-items">
+      <!-- <div class="cart-row">
+          <div class="cart-item cart-column">
+              <img class="cart-item-image" src="Image/Pepsi.png" width="100" height="100">
+              <span class="cart-item-title neon">Pepsi</span>
+          </div>
+          <span class="cart-price cart-column neon">$1.19</span>
+          <div class="cart-quantity cart-column">
+              <input class="cart-quantity-input neon" type="number" value="1">
+              <button class="btn btn-danger neon" type="button">REMOVE</button>
+          </div>
+      </div>
+      <div class="cart-row">
+          <div class="cart-item cart-column">
+              <img class="cart-item-image" src="Image/CocaColaZero.png" width="100" height="100">
+              <span class="cart-item-title neon">Coca Cola Zero</span>
+          </div>
+          <span class="cart-price cart-column neon">$1.49</span>
+          <div class="cart-quantity cart-column">
+              <input class="cart-quantity-input neon" type="number" value="2">
+              <button class="btn btn-danger neon" type="button">REMOVE</button>
+          </div>
+      </div> -->
+  </div>
+  <!-- <div class="line"></div> -->
+  <div class="cart-total">
+      <span class="cart-total-title neon">Total</span>
+      <span class="cart-total-price neon">$0.00</span>
+  </div>
+  <button class="btn btn-purchase neon " type="button">PURCHASE</button>
+</section>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
